@@ -1,7 +1,8 @@
 import express from "express";
-import playerRoutes from "./playerRoutes.js";
+import userRoutes from "./userRoutes.js";
+
 const router = express.Router();
 
-router.use("/players", playerRoutes)
+router.use("/users", userRoutes)
 
 export default router;

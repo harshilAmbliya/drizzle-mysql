@@ -1,15 +1,15 @@
 const prepareSuccessResponse = (data, message) => {
     return {
-        status: "success",
+        data: data,
         message: message,
-        data: data
+        success: true,
     }
 }
 
 const prepareErrorResponse = (message) => {
     return {
-        status: "error",
-        message: message
+        message: message,
+        success: false
     }
 }
 
